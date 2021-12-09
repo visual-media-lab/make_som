@@ -5,7 +5,9 @@
 - Python3.8以上(Python3.7でsomocluのインストールに失敗します)
 
 # 自己組織化マップの作成
-1. 以下のコマンドを実行する
+1. 以下のリンクに従ってmatplotlibで日本語が表示されるようにする(ラベルを日本語で表示したい場合は必須です).  
+https://www.yutaka-note.com/entry/matplotlib_japanese#matplotlibrc%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E6%9B%B8%E3%81%8D%E6%8F%9B%E3%81%88
+2. 以下のコマンドを実行する
 ```Bash
 pip3 install -r requirements.txt
 ```
@@ -14,12 +16,12 @@ pip3 install -r requirements.txt
 pip3 install numpy
 pip3 install somoclu==1.7.4
 ```
-2. `config.yaml`を編集する
-3. 以下のコマンドを実行する
+3. `config.yaml`を編集する
+4. 以下のコマンドを実行する
 ```
 python3 make_som.py
 ```
-4. 実行後, 以下のような画像が表示・ファイル出力されたら成功です.  
+実行後, 以下のような画像が表示・ファイル出力されたら成功です.  
 <img src="example.png" height=400>
 
 # 出力される自己組織化マップの見かた
