@@ -1,4 +1,5 @@
 import numpy as np
+import os
 import pickle
 import somoclu
 import yaml
@@ -7,16 +8,22 @@ import yaml
 def read_data(path):
     with open(path) as f:
         L=f.readlines()
+        print("features:",L[0])
         L=L[1:]#1行目は特徴量ベクトルではないので読み飛ばす
     L=[i.replace("\n","").split(" ") for i in L]
     label=[i[-1] for i in L]
-    data=[list(map(float,i[:-1])) for i in L]
-    return np.array(data,dtype=np.float32),label
+
+    print("start make data")
+    data=np.array([list(map(float,i[:-1])) for i in L],dtype=np.float32)
+    print("end make data")
+    return data,label
 
 if __name__ == "__main__":
     with open("config.yaml") as f:
         config=yaml.safe_load(f)
     
+    print("start read data")
+
     base_name=config["input_path"].split(".")[0]
     data_pickle=base_name+"_data.pickle"
     label_pickle=base_name+"_label.pickle"
