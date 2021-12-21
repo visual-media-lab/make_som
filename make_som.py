@@ -44,6 +44,13 @@ if __name__ == "__main__":
             pickle.dump(x,f)
         with open(label_pickle,"wb") as f:
             pickle.dump(y,f)
+    #表示するラベルが指定されている場合は該当するもの以外は空文字列にする
+    if config["label_disp"] is not None:
+        label_disp=set(config["label_disp"])
+        y=[i if i in label_disp else "" for i in y]
+
+    print("\n".join([i for i in y if i!=""]))
+    print("end read data")
 
     #SOMの定義
     n_rows=config["n_rows"]
