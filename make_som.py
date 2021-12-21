@@ -53,6 +53,7 @@ if __name__ == "__main__":
                         verbose=2,compactsupport=False)
 
     #学習
+    print("start train")
     som.train(data=x,epochs=config["epochs"])
 
     #コードブックの保存
