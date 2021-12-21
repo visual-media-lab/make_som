@@ -17,7 +17,26 @@ if __name__ == "__main__":
     with open("config.yaml") as f:
         config=yaml.safe_load(f)
     
+    base_name=config["input_path"].split(".")[0]
+    data_pickle=base_name+"_data.pickle"
+    label_pickle=base_name+"_label.pickle"
+
+    #pickleが保存してあったらそこから読み込む
+    if os.path.isfile(data_pickle) and os.path.isfile(label_pickle):
+        print("load pickle")
+        with open(data_pickle,"rb") as f:
+            x=pickle.load(f)
+
+        with open(label_pickle,"rb") as f:
+            y=pickle.load(f)
+    else:
     x,y=read_data(config["input_path"])
+        #pickle形式で保存
+        print("save pickle")
+        with open(data_pickle,"wb") as f:
+            pickle.dump(x,f)
+        with open(label_pickle,"wb") as f:
+            pickle.dump(y,f)
 
     #SOMの定義
     n_rows=config["n_rows"]
