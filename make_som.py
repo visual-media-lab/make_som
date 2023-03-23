@@ -37,7 +37,7 @@ if __name__ == "__main__":
         with open(label_pickle,"rb") as f:
             y=pickle.load(f)
     else:
-    x,y=read_data(config["input_path"])
+        x,y=read_data(config["input_path"])
         #pickle形式で保存
         print("save pickle")
         with open(data_pickle,"wb") as f:
