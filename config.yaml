@@ -1,12 +1,16 @@
 {
-  "label_disp": , #è¡¨ç¤ºã™ã‚‹ãƒ©ãƒ™ãƒ«. ãƒªã‚¹ãƒˆã§æŒ‡å®šã™ã‚‹. å…¨éƒ¨è¡¨ç¤ºã™ã‚‹ã¨ãã¯ä½•ã‚‚æ›¸ã‹ãªã„
+  #Ž©ŒÈ‘gD‰»ƒ}ƒbƒv‚Ìì¬ŠÖŒW
+  "input_path" : "test.dat", #Ž©ŒÈ‘gD‰»ƒ}ƒbƒv—p‚Ì“ü—ÍƒxƒNƒgƒ‹ƒtƒ@ƒCƒ‹‚ÌƒpƒX.
+                             #make_som_data(https://github.com/visual-media-lab/make_som_data)‚É‚æ‚èo—Í‚³‚ê‚é“ü—ÍƒxƒNƒgƒ‹ƒtƒ@ƒCƒ‹‚ÌŒ`Ž®‚É€‹’‚·‚é‚±‚Æ
+  "n_rows": 24, #Ž©ŒÈ‘gD‰»ƒ}ƒbƒv‚Ìc•ûŒü‚Ìs”
+  "n_cols": 30, #Ž©ŒÈ‘gD‰»ƒ}ƒbƒv‚Ì‰¡•ûŒü‚Ì—ñ”
 
-  #ï¿½ï¿½ï¿½xï¿½ÈƒIï¿½vï¿½Vï¿½ï¿½ï¿½ï¿½
-  "epochs": 10000, #ï¿½ï¿½ï¿½ï¿½wï¿½Kï¿½ï¿½ï¿½é‚©
-  "maptype": "toroid", #ï¿½~ï¿½Â‘Ì‚É•`ï¿½æ‚³ï¿½ï¿½ï¿½ï¿½
+  #‚“x‚ÈƒIƒvƒVƒ‡ƒ“
+  "epochs": 10000, #‰½‰ñŠwK‚·‚é‚©
+  "maptype": "toroid", #‰~ŠÂ‘Ì‚É•`‰æ‚³‚¹‚é
   
-  #ï¿½ï¿½ï¿½Ê‚Ìoï¿½ÍŠÖŒW
-  "codebook_path": "codebook.pickle", #ï¿½Rï¿½[ï¿½hï¿½uï¿½bï¿½Nï¿½ï¿½ï¿½oï¿½Í‚ï¿½ï¿½ï¿½pï¿½X. pickleï¿½`ï¿½ï¿½ï¿½Å•Û‘ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-  "umatrix_path": "umatrix.pickle", #umatrixï¿½ï¿½Û‘ï¿½ï¿½ï¿½ï¿½ï¿½pï¿½X. pickleï¿½`ï¿½ï¿½ï¿½Å•Û‘ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½. ï¿½Ä•`ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½Û‚Í‚ï¿½ï¿½Ìƒtï¿½@ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½gï¿½pï¿½ï¿½ï¿½ï¿½.
-  "som_path": "result.png", #ï¿½oï¿½Í‚ï¿½ï¿½ê‚½SOMï¿½ï¿½ï¿½æ‘œï¿½Æ‚ï¿½ï¿½Ä•Û‘ï¿½ï¿½ï¿½ï¿½ï¿½pï¿½X.
+  #Œ‹‰Ê‚Ìo—ÍŠÖŒW
+  "codebook_path": "codebook.pickle", #ƒR[ƒhƒuƒbƒN‚ðo—Í‚·‚éƒpƒX. pickleŒ`Ž®‚Å•Û‘¶‚³‚ê‚é
+  "umatrix_path": "umatrix.pickle", #umatrix‚ð•Û‘¶‚·‚éƒpƒX. pickleŒ`Ž®‚Å•Û‘¶‚³‚ê‚é. Ä•`‰æ‚ðs‚¤Û‚Í‚±‚Ìƒtƒ@ƒCƒ‹‚ðŽg—p‚·‚é.
+  "som_path": "result.png", #o—Í‚³‚ê‚½SOM‚ð‰æ‘œ‚Æ‚µ‚Ä•Û‘¶‚·‚éƒpƒX.
 }
