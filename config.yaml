@@ -1,5 +1,6 @@
 {
   #自己組織化マップの作成関係
+  "label_disp": , #表示するラベル. リストで指定する. 全部表示するときは何も書かない
   "input_path" : "test.dat", #自己組織化マップ用の入力ベクトルファイルのパス.
                              #make_som_data(https://github.com/visual-media-lab/make_som_data)により出力される入力ベクトルファイルの形式に準拠すること
   "n_rows": 24, #自己組織化マップの縦方向の行数
